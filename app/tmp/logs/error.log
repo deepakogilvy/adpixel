@@ -429,6 +429,7 @@ Stack Trace:
 #3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+<<<<<<< HEAD
 2016-12-08 11:25:55 Error: [PHPExcel_Exception] Invalid character found in sheet title
 Request URL: /campaigns/downloadCampaign/18?url=campaigns%2FdownloadCampaign%2F18
 Stack Trace:
@@ -436,11 +437,76 @@ Stack Trace:
 #1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
 #2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
 #3 [internal function]: CampaignsController->downloadCampaign('18')
+=======
+2016-12-08 10:38:02 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /campaigns?url=campaigns
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/adpixel/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Model.php(3624): ConnectionManager::getDataSource('default')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1160): Model->setDataSource('default')
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(3651): Model->setSource('users')
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(1392): Model->getDataSource()
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(1488): Model->schema()
+#7 /var/www/html/adpixel/lib/Cake/Model/Behavior/DeletedBehavior.php(11): Model->hasField('is_deleted')
+#8 [internal function]: DeletedBehavior->beforeFind(Object(User), Array)
+#9 /var/www/html/adpixel/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#10 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#11 /var/www/html/adpixel/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/html/adpixel/lib/Cake/Model/Model.php(3082): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/html/adpixel/lib/Cake/Model/Model.php(2996): Model->buildQuery('first', Array)
+#14 /var/www/html/adpixel/app/Model/User.php(17): Model->find('first', Array)
+#15 /var/www/html/adpixel/app/Controller/AppController.php(18): User->loggedUser()
+#16 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#17 /var/www/html/adpixel/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#18 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#19 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#20 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#21 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 {main}
+2016-12-08 10:55:06 Error: [PHPExcel_Exception] Maximum 31 characters allowed in sheet title.
+Request URL: /campaigns/downloadCampaign/1?url=campaigns%2FdownloadCampaign%2F1
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle('2016|Q3|IBM|CA|...')
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle('2016|Q3|IBM|CA|...')
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName('2016|Q3|IBM|CA|...')
+#3 [internal function]: CampaignsController->downloadCampaign('1')
 #4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
 #5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
 #6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
 #7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2016-12-08 12:13:17 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/3?url=campaigns%2FdownloadCampaign%2F3
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(245): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('3')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-08 12:13:21 Error: [PHPExcel_Exception] Maximum 31 characters allowed in sheet title.
+Request URL: /campaigns/downloadCampaign/1?url=campaigns%2FdownloadCampaign%2F1
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle('2016|Q3|IBM|CA|...')
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle('2016|Q3|IBM|CA|...')
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(245): ExcelComponent->setSheetName('2016|Q3|IBM|CA|...')
+#3 [internal function]: CampaignsController->downloadCampaign('1')
+>>>>>>> daf2eba6ec0bc5af0f68e81bc158dc424580d45b
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+<<<<<<< HEAD
 2016-12-08 11:26:05 Error: [PHPExcel_Exception] Invalid character found in sheet title
 Request URL: /campaigns/downloadCampaign/19?url=campaigns%2FdownloadCampaign%2F19
 Stack Trace:
@@ -448,11 +514,33 @@ Stack Trace:
 #1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
 #2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
 #3 [internal function]: CampaignsController->downloadCampaign('19')
+=======
+2016-12-08 12:13:24 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/2?url=campaigns%2FdownloadCampaign%2F2
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(245): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('2')
 #4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
 #5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
 #6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
 #7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2016-12-08 12:13:27 Error: [PHPExcel_Exception] Maximum 31 characters allowed in sheet title.
+Request URL: /campaigns/downloadCampaign/4?url=campaigns%2FdownloadCampaign%2F4
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle('2016|Q3|IBM|CA|...')
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle('2016|Q3|IBM|CA|...')
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(245): ExcelComponent->setSheetName('2016|Q3|IBM|CA|...')
+#3 [internal function]: CampaignsController->downloadCampaign('4')
+>>>>>>> daf2eba6ec0bc5af0f68e81bc158dc424580d45b
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+<<<<<<< HEAD
 2016-12-08 11:26:12 Error: [PHPExcel_Exception] Invalid character found in sheet title
 Request URL: /campaigns/downloadCampaign/19?url=campaigns%2FdownloadCampaign%2F19
 Stack Trace:
@@ -460,11 +548,21 @@ Stack Trace:
 #1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
 #2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
 #3 [internal function]: CampaignsController->downloadCampaign('19')
+=======
+2016-12-08 12:13:31 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/6?url=campaigns%2FdownloadCampaign%2F6
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(245): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('6')
+>>>>>>> daf2eba6ec0bc5af0f68e81bc158dc424580d45b
 #4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
 #5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
 #6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
 #7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+<<<<<<< HEAD
 2016-12-08 13:32:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '748562-http://www.ibbm.com/cloud-computing/landing/urbancode-tha' for key 'Composite'
 Request URL: /campaigns/edit/3?url=campaigns%2Fedit%2F3
 Stack Trace:
@@ -499,3 +597,15 @@ Stack Trace:
 #11 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
 #12 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+=======
+2016-12-08 12:19:36 Error: Fatal Error (4): syntax error, unexpected '$links' (T_VARIABLE) in [/var/www/html/adpixel/app/Controller/UsersController.php, line 176]
+2016-12-08 12:19:36 Error: [FatalErrorException] syntax error, unexpected '$links' (T_VARIABLE)
+Request URL: /users/getPages?url=users%2FgetPages
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 176)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 176, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 176, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+>>>>>>> daf2eba6ec0bc5af0f68e81bc158dc424580d45b

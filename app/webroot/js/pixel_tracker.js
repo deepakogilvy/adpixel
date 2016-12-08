@@ -50,7 +50,7 @@ casper.on('resource.received', function (resource) {
 });
 
 casper.start().then(function () {
-    this.open('http://dev.adpixel.com/users/getPages', {
+    this.open('http://adpixel.dev/users/getPages', {
         method: 'get',
         headers: {
             'Accept': 'application/json'
@@ -87,7 +87,7 @@ casper.then(function () {
 
 casper.run(function() {
     utils.dump(casper.output);
-    this.open('http://dev.adpixel.com/users/postPages', {
+    this.open('http://adpixel.dev/users/postPages', {
         method: 'post',
         headers: {
             'Accept': 'application/json'
