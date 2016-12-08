@@ -61,25 +61,30 @@ casper.start().then(function () {
 casper.then(function () {
     var json_string = JSON.parse( this.getPageContent() );
     casper.each( json_string, function( casper, link ) {
-        casper.thenOpen( link.Pages.url, function () {
-            var vendor = JSON.parse( link.Pages.row_data ).vendor;
-            var pixelIdCode = JSON.parse( link.Pages.row_data ).pixel_id_code;
-            var splittedPixelCode = pixelIdCode.split(/src\s*=\s*"(HTTPS?:){0,1}(.+?)"/i);
-            casper.output[link.Pages.id] = "Not Firing";
-            if ( vendor.toLowerCase() == "sizmek" || vendor.toLowerCase() == "the trade desk" ) {
-                casper.each( casper.urlList[link.Pages.url], function( casper1, par ) {
-                    var webUrl = par.url.replace(/https?:/i, '');
-                    var excelUrl = splittedPixelCode[2].replace(/&amp;/g, '&');
-                    if( webUrl == excelUrl ) {
-                        if ( vendor.toLowerCase() == "sizmek" ) {
-                            result = ( par.ActivityID != "undefined" && par.ActivityID == link.Pages.pixel_code ) ? "Firing" :"Not Firing";
-                        } else {
-                            var act = ( par.ct ).split(":");
-                            result = ( par.ct != "undefined" && act[1]== link.Pages.pixel_code ) ? "Firing" : "Not Firing";
+        casper.thenOpen( link.Pages.url, function (response) {
+            if(response.status == 404){
+                casper.output[link.Pages.id] = "Not Found";
+            }
+            else{
+                var vendor = JSON.parse( link.Pages.row_data ).vendor;
+                var pixelIdCode = JSON.parse( link.Pages.row_data ).pixel_id_code;
+                var splittedPixelCode = pixelIdCode.split(/src\s*=\s*"(HTTPS?:){0,1}(.+?)"/i);
+                casper.output[link.Pages.id] = "Not Firing";
+                if ( vendor.toLowerCase() == "sizmek" || vendor.toLowerCase() == "the trade desk" ) {
+                    casper.each( casper.urlList[link.Pages.url], function( casper1, par ) {
+                        var webUrl = par.url.replace(/https?:/i, '');
+                        var excelUrl = splittedPixelCode[2].replace(/&amp;/g, '&');
+                        if( webUrl == excelUrl ) {
+                            if ( vendor.toLowerCase() == "sizmek" ) {
+                                result = ( par.ActivityID != "undefined" && par.ActivityID == link.Pages.pixel_code ) ? "Firing" :"Not Firing";
+                            } else {
+                                var act = ( par.ct ).split(":");
+                                result = ( par.ct != "undefined" && act[1]== link.Pages.pixel_code ) ? "Firing" : "Not Firing";
+                            }
+                            casper.output[link.Pages.id] = result;
                         }
-                        casper.output[link.Pages.id] = result;
-                    }
-                });
+                    });
+                }
             }
         });
     });

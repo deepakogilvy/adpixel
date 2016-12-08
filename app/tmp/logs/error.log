@@ -609,3 +609,37 @@ Stack Trace:
 #4 [internal function]: App::shutdown()
 #5 {main}
 >>>>>>> daf2eba6ec0bc5af0f68e81bc158dc424580d45b
+2016-12-08 15:12:24 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in [/var/www/html/adpixel/app/Controller/CampaignsController.php, line 197]
+2016-12-08 15:12:24 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION)
+Request URL: /campaigns?url=campaigns
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 197)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 197, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 197, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-08 15:15:41 Error: [PHPExcel_Exception] Maximum 31 characters allowed in sheet title.
+Request URL: /campaigns/downloadCampaign/1?url=campaigns%2FdownloadCampaign%2F1
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle('2016|Q3|IBM|CA|...')
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle('2016|Q3|IBM|CA|...')
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(269): ExcelComponent->setSheetName('2016|Q3|IBM|CA|...')
+#3 [internal function]: CampaignsController->downloadCampaign('1')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-08 15:36:23 Error: [PHPExcel_Exception] Maximum 31 characters allowed in sheet title.
+Request URL: /campaigns/downloadCampaign/1?url=campaigns%2FdownloadCampaign%2F1
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle('2016|Q3|IBM|CA|...')
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle('2016|Q3|IBM|CA|...')
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(269): ExcelComponent->setSheetName('2016|Q3|IBM|CA|...')
+#3 [internal function]: CampaignsController->downloadCampaign('1')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

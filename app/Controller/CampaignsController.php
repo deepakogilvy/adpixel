@@ -172,16 +172,16 @@ class CampaignsController extends AppController {
                                     if( !empty( $links ) )                                       
                                         unset($costerData[trim( $temp['pixel_code'] ).'-'.$temp['url']]);
                                 }
-                                else{
-                                   $duplicateCosterData = array_filter($arrayData, function ($element) use ($costerData) {
-                                        return !in_array($element, $costerData);
-                                    });
-                                }
-                                
                             }
                         }
                     }
                 }
+                 if( $type == 'add' ){  
+                    $duplicateCosterData = array_filter($arrayData, function ($element) use ($costerData) {
+                        return !in_array($element, $costerData);
+                    });
+                }
+                
                 $costerData = array_values($costerData);
                 if(!empty($duplicateCosterData)){
                     $pixelCodeStr =  implode(",",array_column($duplicateCosterData,'pixel_code'));
@@ -242,7 +242,6 @@ class CampaignsController extends AppController {
                 [ 'type' => 'left', 'table' => 'validation_logs', 'alias' => 'validation_log', 'conditions' => [ 'page.id = validation_log.page_id' ] ]
         ];
         $campaignPage = $this->Campaign->find( 'all', [ 'fields' => [ 'Campaign.id', 'page.*', 'validation_log.*' ], 'conditions' => [ 'Campaign.id' => $param ], 'joins' => $options ] );
-
         $output = array();
         foreach( $campaignPage as $key => $value ) {
             foreach( $value as $tableKey => $tableData ) {
@@ -257,12 +256,11 @@ class CampaignsController extends AppController {
                     $output[$tableData['id']]['Pixel Location/URL'] = $tableData['url'];
                     $output[$tableData['id']]['Notes'] = '';
                 }
-                if( $tableKey == 'validation_log' ) {
+                if( $tableKey == 'validation_log' && $tableData['page_id'] != null) {
                     $output[$tableData['page_id']][$tableData['date']] = $tableData['status'];
                 }
             }
         }
-
         $output = array_values( $output );
 
         $this->Excel->createWorksheet();
