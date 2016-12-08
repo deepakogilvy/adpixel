@@ -1,0 +1,19 @@
+<?php
+class DATABASE_CONFIG {
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'adpixel',
+        'password' => 'xc0MbuvL5UYg',
+        'database' => 'adpixel',
+        'prefix' => '',
+    );
+
+    public $mongo = array(
+        'datasource' => 'MongodbSource',
+        'database' => 'adpixel',
+        'host' => 'localhost',
+        'port' => 27017,
+    );
+}

@@ -1,0 +1,431 @@
+2016-10-05 16:21:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete('1')
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:22:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete('1')
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:22:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete(NULL)
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:24:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete(NULL)
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:24:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: //campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete(NULL)
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:25:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete('1')
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:25:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete(NULL)
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:30:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete('1')
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:31:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'softdelete' at line 1
+Request URL: /campaigns/delete/1?url=campaigns%2Fdelete%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('softdelete', Array)
+#2 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('softdelete', Array, Array)
+#3 /var/www/adpixel/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('softdelete', Array, Array)
+#4 /var/www/adpixel/lib/Cake/Model/Model.php(832): DboSource->query('softdelete', Array, Object(Campaign))
+#5 /var/www/adpixel/app/Controller/CampaignsController.php(82): Model->__call('softdelete', Array)
+#6 /var/www/adpixel/app/Controller/CampaignsController.php(82): Campaign->softdelete('1')
+#7 [internal function]: CampaignsController->delete('1')
+#8 /var/www/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#9 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#11 /var/www/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-10-05 16:38:46 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-10-05 16:38:46 Error: [InternalErrorException] Internal Server Error
+Request URL: /campaigns/edit/1?url=campaigns%2Fedit%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#2 /var/www/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#3 /var/www/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-10-05 16:38:59 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-10-05 16:38:59 Error: [InternalErrorException] Internal Server Error
+Request URL: /campaigns/edit/1?url=campaigns%2Fedit%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#2 /var/www/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#3 /var/www/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-10-05 16:39:57 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-10-05 16:39:57 Error: [InternalErrorException] Internal Server Error
+Request URL: /campaigns/edit/1?url=campaigns%2Fedit%2F1
+Stack Trace:
+#0 /var/www/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#2 /var/www/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/adpixe...', 2472, Array)
+#3 /var/www/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 15:54:06 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'adpixel\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/adpixel/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Model.php(3624): ConnectionManager::getDataSource('default')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1160): Model->setDataSource('default')
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(3651): Model->setSource('users')
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(1392): Model->getDataSource()
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(1488): Model->schema()
+#7 /var/www/html/adpixel/lib/Cake/Model/Behavior/DeletedBehavior.php(11): Model->hasField('is_deleted')
+#8 [internal function]: DeletedBehavior->beforeFind(Object(User), Array)
+#9 /var/www/html/adpixel/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#10 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#11 /var/www/html/adpixel/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/html/adpixel/lib/Cake/Model/Model.php(3082): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/html/adpixel/lib/Cake/Model/Model.php(2996): Model->buildQuery('first', Array)
+#14 /var/www/html/adpixel/app/Controller/UsersController.php(33): Model->find('first', Array)
+#15 [internal function]: UsersController->login()
+#16 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#18 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-12-07 15:54:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'adpixel\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/adpixel/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Model.php(3624): ConnectionManager::getDataSource('default')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1160): Model->setDataSource('default')
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(3651): Model->setSource('users')
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(1392): Model->getDataSource()
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(1488): Model->schema()
+#7 /var/www/html/adpixel/lib/Cake/Model/Behavior/DeletedBehavior.php(11): Model->hasField('is_deleted')
+#8 [internal function]: DeletedBehavior->beforeFind(Object(User), Array)
+#9 /var/www/html/adpixel/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#10 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#11 /var/www/html/adpixel/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/html/adpixel/lib/Cake/Model/Model.php(3082): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/html/adpixel/lib/Cake/Model/Model.php(2996): Model->buildQuery('first', Array)
+#14 /var/www/html/adpixel/app/Controller/UsersController.php(33): Model->find('first', Array)
+#15 [internal function]: UsersController->login()
+#16 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#18 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-12-07 15:54:55 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'adpixel\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/adpixel/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Model.php(3624): ConnectionManager::getDataSource('default')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1160): Model->setDataSource('default')
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(3651): Model->setSource('users')
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(1392): Model->getDataSource()
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(1488): Model->schema()
+#7 /var/www/html/adpixel/lib/Cake/Model/Behavior/DeletedBehavior.php(11): Model->hasField('is_deleted')
+#8 [internal function]: DeletedBehavior->beforeFind(Object(User), Array)
+#9 /var/www/html/adpixel/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#10 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#11 /var/www/html/adpixel/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/html/adpixel/lib/Cake/Model/Model.php(3082): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/html/adpixel/lib/Cake/Model/Model.php(2996): Model->buildQuery('first', Array)
+#14 /var/www/html/adpixel/app/Controller/UsersController.php(33): Model->find('first', Array)
+#15 [internal function]: UsersController->login()
+#16 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#18 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-12-07 15:59:31 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 15:59:31 Error: [InternalErrorException] Internal Server Error
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:01:04 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:01:04 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:03:06 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:03:06 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:04:47 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:04:47 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:06:24 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:06:24 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:10:23 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:10:23 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:10:36 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:10:36 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:13:18 Error: Fatal Error (1): Call to undefined function move_uplaoded_file() in [/var/www/html/adpixel/app/Controller/CampaignsController.php, line 105]
+2016-12-07 16:13:18 Error: [FatalErrorException] Call to undefined function move_uplaoded_file()
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/a...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/a...', 105, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/a...', 105, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:41:48 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:41:48 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:42:30 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:42:30 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:50:13 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:50:13 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:50:31 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 16:50:31 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 16:52:05 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 7382679 bytes) in [/var/www/html/adpixel/lib/Cake/Utility/Debugger.php, line 610]
+2016-12-07 16:52:05 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 7382679 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 610, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 610, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 17:02:02 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 17:02:02 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 17:06:03 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2472]
+2016-12-07 17:06:03 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2472)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2472, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 17:09:03 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2501]
+2016-12-07 17:09:03 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2501)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2501, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2501, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-07 17:12:30 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in [/var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php, line 2501]
+2016-12-07 17:12:30 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes)
+Request URL: /campaigns/add?url=campaigns%2Fadd
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/a...', 2501)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/a...', 2501, Array)
+#2 /var/www/html/adpixel/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/a...', 2501, Array)
+#3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
