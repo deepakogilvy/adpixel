@@ -429,3 +429,73 @@ Stack Trace:
 #3 /var/www/html/adpixel/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-12-08 11:25:55 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/18?url=campaigns%2FdownloadCampaign%2F18
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('18')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-08 11:26:05 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/19?url=campaigns%2FdownloadCampaign%2F19
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('19')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-08 11:26:12 Error: [PHPExcel_Exception] Invalid character found in sheet title
+Request URL: /campaigns/downloadCampaign/19?url=campaigns%2FdownloadCampaign%2F19
+Stack Trace:
+#0 /var/www/html/adpixel/app/Vendor/Excel/PHPExcel/Worksheet.php(841): PHPExcel_Worksheet::_checkSheetTitle(NULL)
+#1 /var/www/html/adpixel/app/Controller/Component/ExcelComponent.php(44): PHPExcel_Worksheet->setTitle(NULL)
+#2 /var/www/html/adpixel/app/Controller/CampaignsController.php(243): ExcelComponent->setSheetName(NULL)
+#3 [internal function]: CampaignsController->downloadCampaign('19')
+#4 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#5 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#7 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-08 13:32:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '748562-http://www.ibbm.com/cloud-computing/landing/urbancode-tha' for key 'Composite'
+Request URL: /campaigns/edit/3?url=campaigns%2Fedit%2F3
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ad...', Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ad...')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1935): DboSource->create(Object(Page), Array, Array)
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(1750): Model->_doSave(Array, Array)
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(2345): Model->save(Array, Array)
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(2273): Model->saveMany(Array, Array)
+#7 /var/www/html/adpixel/app/Controller/CampaignsController.php(74): Model->saveAll(Array)
+#8 [internal function]: CampaignsController->edit('3')
+#9 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#10 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#12 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-12-08 13:33:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '748562-http://www.ibbm.com/cloud-computing/landing/urbancode-tha' for key 'Composite'
+Request URL: /campaigns/edit/3?url=campaigns%2Fedit%2F3
+Stack Trace:
+#0 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ad...', Array)
+#2 /var/www/html/adpixel/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ad...')
+#3 /var/www/html/adpixel/lib/Cake/Model/Model.php(1935): DboSource->create(Object(Page), Array, Array)
+#4 /var/www/html/adpixel/lib/Cake/Model/Model.php(1750): Model->_doSave(Array, Array)
+#5 /var/www/html/adpixel/lib/Cake/Model/Model.php(2345): Model->save(Array, Array)
+#6 /var/www/html/adpixel/lib/Cake/Model/Model.php(2273): Model->saveMany(Array, Array)
+#7 /var/www/html/adpixel/app/Controller/CampaignsController.php(74): Model->saveAll(Array)
+#8 [internal function]: CampaignsController->edit('3')
+#9 /var/www/html/adpixel/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#10 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/adpixel/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest))
+#12 /var/www/html/adpixel/app/webroot/index.php(53): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
