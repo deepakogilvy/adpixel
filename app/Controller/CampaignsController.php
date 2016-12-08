@@ -32,6 +32,8 @@ class CampaignsController extends AppController {
 		    if( $pixel['valid_file'] ) {
                         $this->Page->saveAll( $pixel['data'] );
 		    } else {
+                        $this->Campaign->id = $campaign_id;
+                        $this->Campaign->delete();
                         $errorMessage = __( $pixel['error_message'] );
                         $this->Session->setFlash( $errorMessage, 'default', [ 'class' => 'danger' ] );
                         $this->redirect( [ 'controller' => 'campaigns', 'action' => 'index' ] );
