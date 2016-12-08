@@ -1,0 +1,12 @@
+
+[36m[info][0m [phantom] Starting...
+[36m[info][0m [phantom] Running suite: 2 steps
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[32;1m[debug][0m [phantom] opening url: http://dev.adpixel.com/users/getPages, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=http://dev.adpixel.com/users/getPages, type=Other, willNavigate=true, isMainFrame=true
+[36m[info][0m [phantom] Step anonymous 1/2: done in 29ms.
+[32;1m[debug][0m [phantom] url changed to "http://dev.adpixel.com/users/getPages"
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[36m[info][0m [phantom] Step anonymous 2/2 http://dev.adpixel.com/users/getPages (HTTP 200)
+[32;1m[debug][0m [phantom] Navigation requested: url=about:blank, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "about:blank"
