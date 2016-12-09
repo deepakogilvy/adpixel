@@ -1,5 +1,5 @@
 ﻿<?php
-Configure::write('debug', 4);
+Configure::write('debug', 0);
 Configure::write('Error', array('handler' => 'ErrorHandler::handleError', 'level' => E_ALL & ~(E_DEPRECATED | E_STRICT | E_NOTICE), 'trace' => true ));
 Configure::write('Exception', array( 'handler'=> 'ErrorHandler::handleException', 'renderer' => 'ExceptionRenderer', 'log' => true ));
 Configure::write('App.encoding', 'UTF-8');

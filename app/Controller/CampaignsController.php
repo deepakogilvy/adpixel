@@ -176,7 +176,7 @@ class CampaignsController extends AppController {
                         }
                     }
                 }
-                 if( $type == 'add' ){  
+                if( $type == 'add' ){  
                     $duplicateCosterData = array_filter($arrayData, function ($element) use ($costerData) {
                         return !in_array($element, $costerData);
                     });
