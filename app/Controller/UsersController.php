@@ -168,7 +168,8 @@ class UsersController extends AppController {
         $option = [ [ 'type' => 'left', 'table' => 'process_ids', 'alias' => 'pids', 'conditions' => [ 'campaign.id = pids.campaign_id' ] ] ];
         $campaigns = $this->Campaign->find( 'first', [ 'fields' => [ 'id' ], 'conditions' => [ 'is_deleted' => 0, 'start_date <=' => date('Y-m-d'), 'end_date >=' => date('Y-m-d'), 'FIND_IN_SET("' . date('N') . '",validation_week_days)', 'OR' => [ 'pids.created !=' => date('Y-m-d'), 'pids.created' => NULL ] ], 'joins' => $option ] );
         if( !empty( $campaigns ) ) {
-            $this->ProcessId->saveAll( [ 'campaign_id' => $campaigns['Campaign']['id'], 'process_id' => $this->UUID(), 'created' => date('Y-m-d') ] );
+            $this->ProcessId->deleteAll( [ 'campaign_id' => $campaigns['Campaign']['id'] ] );
+            //$this->ProcessId->saveAll( [ 'campaign_id' => $campaigns['Campaign']['id'], 'process_id' => $this->UUID(), 'created' => date('Y-m-d') ] );
 
             $links = $this->Pages->find( 'all', [ 'fields' => [ 'id', 'pixel_code', 'url', 'row_data'], 'conditions' => [ 'campaign_id' => $campaigns['Campaign']['id'], 'is_deleted' => 0 ] ] );
             $links = json_encode( $links );
