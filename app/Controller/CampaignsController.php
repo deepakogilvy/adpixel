@@ -184,8 +184,9 @@ class CampaignsController extends AppController {
                 
                 $costerData = array_values($costerData);
                 if(!empty($duplicateCosterData)){
-                    $pixelCodeStr =  implode(",",array_column($duplicateCosterData,'pixel_code'));
-                    $errorMessage = __( "The file is not uploaded because of duplicate pixel codes i.e $pixelCodeStr " );
+                    $final_duplicate_entry = array_map(function($a, $b) { return $a . ' : ' . $b; }, array_column($duplicateCosterData,'pixel_code'), array_column($duplicateCosterData,'url'));
+                    $pixelCodeStr =  implode("<br>", $final_duplicate_entry);
+                    $errorMessage = __( "The file is not uploaded because of duplicate pixel codes i.e <br>$pixelCodeStr " );
                     $validFile = false;
                 }
                 if( empty( $headerRow ) ) {
@@ -242,6 +243,7 @@ class CampaignsController extends AppController {
                 [ 'type' => 'left', 'table' => 'validation_logs', 'alias' => 'validation_log', 'conditions' => [ 'page.id = validation_log.page_id' ] ]
         ];
         $campaignPage = $this->Campaign->find( 'all', [ 'fields' => [ 'Campaign.id', 'page.*', 'validation_log.*' ], 'conditions' => [ 'Campaign.id' => $param ], 'joins' => $options ] );
+        
         $output = array();
         foreach( $campaignPage as $key => $value ) {
             foreach( $value as $tableKey => $tableData ) {
@@ -262,9 +264,8 @@ class CampaignsController extends AppController {
             }
         }
         $output = array_values( $output );
-
         $this->Excel->createWorksheet();
-        $this->Excel->setSheetName( $output[0]['Business Unit'] );
+        $this->Excel->setSheetName( 'Pixel Data' );
         $row = 1;
         foreach( range( 0, count( $output[0] ) ) as $columnID ) {
             $this->Excel->_activeSheet->getColumnDimension( $columnID )->setAutoSize( true );
